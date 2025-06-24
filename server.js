@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
-app.post('/ussd', (req, res) => {
+app.post('/food', (req, res) => {
     const { sessionId, phoneNumber, text } = req.body;
     let response = '';
     const inputs = text.split('*');
